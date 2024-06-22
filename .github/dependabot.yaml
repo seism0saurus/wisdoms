@@ -1,0 +1,36 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "faultierflora"
+
+  - package-ecosystem: "npm"
+    directory: "/webapp/angular"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "faultierflora"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "faultierflora"
+
+  - package-ecosystem: "docker"
+    directory: "/bot/containerimage"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "faultierflora"
+
+  - package-ecosystem: "docker"
+    directory: "/webapp/containerimage"
+    schedule:
+      interval: "weekly"
+    reviewers:
+      - "faultierflora"

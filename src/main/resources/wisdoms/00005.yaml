@@ -1,0 +1,24 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Sind deine Passwörter sicher? Nutze einen Passwort-manager wie KeePassXC."
+wisdom: |
+  Nach wie vor schützen bei vielen Geräten und Diensten Passwörter den Zugang zu deinem Account oder deinen Daten.
+  Mit steigender Leistungsfähigkeit von Computern, steigen auch die Anforderungen an die Passwörter,
+  damit sie nicht einfach in kurzer Zeit geknackt werden können.
+  Inzwischen sind auch 8 Zeichen zu kurz. Sonderzeichen, Zahlen, Groß- und Kleinbuchstaben und mindestens 10 Zeichen ohne dabei Wore oder Daten zu beinhalten.
+  Und dann auch noch eine unterschiedliches für jeden Dienst.
+  Das wird schwierig für Menschen.
+  
+  Zum Glück gibt es Passwortmanager wie das OpenSource Tool KeePass XC. Mit ihnen musst du dir nur noch ein Passwort merken,
+  um die Passwortdatenbank zu entschlüsseln. Darin kannst du dann für jeden Dienst ein zufälliges langes Passwort generieren und sichern.
+  Neben Passwörtern kannst du auch den Usernamen, Notizen, Dateien oder andere wichtige Informationen zu einem Account speichern.
+  Außerdem behältst du den Überblick, wo du überhaupt Accounts hast.
+  KeePassXC kann die verschlüsselte Datenbank auch in deinem Cloudspeicher synchronisieren, damit du von mehreren Geräten aus darauf zugreifen kannst.
+  
+  Zusätzlich solltest du Zwei-Faktor-Authentifizierung nutzen, wenn die Anbieter sie unterstützen.
+  
+  Nimm den heutigen Tag als Anlass und installiere dir einen Passwortmanager.

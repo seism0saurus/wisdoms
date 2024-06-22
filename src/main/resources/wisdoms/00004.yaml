@@ -1,0 +1,18 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Hast du deine Festplatte verschlüsselt? Schütze deine Daten vor unbefugtem Zugriff."
+wisdom: |
+  Gerade bei mobilen IT-Geräten wie Laptops, Smartphones oder Tablets werden viele persönliche Daten durch die Gegend getragen.
+  Um diese zu schützen, solltest du die Geräte verschlüsseln.
+  Zum Glück musst du dafür heute nicht mehr manuell mit kryptografischen Befehlen hantieren.
+  Android und iOS verschlüsseln Smartphones und Tablets automatisch.
+  Selbst Laptops sind inzwischen meistens mit Windows BitLocker oder Apples FileVault verschlüsselt.
+  Falls deine Version von Windows kein BitLocker unterstützt oder du ein externes Laufwerk so verschlüsseln möchtest,
+  dass du es auch unter MacOS oder Linux entschlüsseln kannst, kannst du VeraCrypt einsetzen.
+  VeraCrypt ist ein OpenSource Tool, dass sich auf die Verschlüsselung von Partitionen konzentriert.
+  
+  Nimm den heutigen Tag als Anlass und verschlüssele deine Daten.

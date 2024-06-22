@@ -1,0 +1,30 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Hast du 2FA aktiviert? Nutze 2FA überall, wo es möglich ist."
+wisdom: |
+  Nach wie vor schützen bei vielen Geräten und Diensten Passwörter den Zugang zu deinem Account oder deinen Daten.
+  Doch Passwörter sind eigentlich denkbar ungeeignet.
+  Computer sind viel besser darin, komplizierte Passwörter zu erraten, als Menschen darin, sie sich zu merken.
+  Das geht mittels Brute-Force oder Wörterbuch Angriffen und steigender Rechenleistung immer schneller.
+  Auch bei Phishing oder Einbrüchen in Server können deine Zugangsdaten gestohlen werden.
+  
+  Mit Zwei-Faktor-Authentifizierung oder kurz 2FA gibt es ein brauchbares Mittel, um Passwörter zu ergänzen.
+  Dabei unterscheidet man drei Dinge, um Zugänge zu sichern.
+  - Was du weißt
+  - Was du hast
+  - Was du bist
+  Du weißt z.B. dein Passwort oder den Mädchennamen deiner Mutter.
+  Du hast z.B: einen Schlüssel oder eine Smartphone mit einer Telefonnummer.
+  Du bist z.B. die Person mit einem einzigartigen Fingerabdruck.
+  Bei 2FA werden nun nicht nur ein Faktor abgefragt, sondern zwei. Üblicherweise dein Passwort (was du weißt) und einen FIDO2 Token oder eine App auf deinem Smartphone.
+  Sobald du deinen Nutzernamen und Passwort eingegeben hat, wirst du aufgefordert, den FIDO2 Token in den Rechner zu stecken oder einen Code von der App auf deinem Smartphone einzugeben.
+  Manchmal kommt auch noch SMS oder Email zum Einsatz. das ist nicht ganz so sicher aber immer noch besser als keine 2FA.
+  
+  Am besten ist es, wenn du bei deinem Account mehrere zweite Faktoren wie eine Authenticator-App und einen FIDO2 Token einrichten kannst.
+  Dann kannst du z.B. den Token nutzen, wenn dein Smartphoneakku alle ist oder du eines der Geräte verlierst.
+  
+  Nimm den heutigen Tag als Anlass und konfiguriere bei deinen Accounts Zwei-Faktor-Authentifizierung.

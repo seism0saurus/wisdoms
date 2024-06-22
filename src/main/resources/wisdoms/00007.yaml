@@ -1,0 +1,31 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Hast du Passkeys aktiviert? Schütze deine Accounts mit der modernen Passwort-alternative."
+wisdom: |
+  Nach wie vor schützen bei vielen Geräten und Diensten Passwörter den Zugang zu deinem Account oder deinen Daten.
+  Doch Passwörter sind eigentlich denkbar ungeeignet.
+  Computer sind viel besser darin, komplizierte Passwörter zu erraten, als Menschen darin, sie sich zu merken.
+  Das geht mittels Brute-Force oder Wörterbuch Angriffen und steigender Rechenleistung immer schneller.
+  Auch bei Phishing oder Einbrüchen in Server können deine Zugangsdaten gestohlen werden.
+  
+  Mit Passkeys steht ein Nachfolger für Passwörter bereit, der die Zugänge nicht nur komfortable ermöglichen soll,
+  sondern auch vor Man-in-the-Middle Angriffen und Phishing schützen.
+  Der Clou an Passkeys ist, dass in den Passkeys die Domain des Dienstes mit integriert ist.
+  D.h. wenn du einen Account bei example.com hast und eine Phishingmail dich auf axemple.com leiter, wird dein Passkey gar nicht übermittelt.
+  Denn er passt nicht zu der Domain, für die er erstellt wurde.
+  
+  Die großen Betriebssystemhersteller haben Passkeys integriert und wollen sie über ihre Cloud synchronisieren.
+  Das ist je nach Konzept ein Problem. Sind die Passkeys nicht Ende-zu-Ende verschlüsselt, könnte Google oder Microsoft diese mitlesen
+  bzw. würden Angreifer*innen in die Hände fallen, falls Lücken in diesen Diensten gefunden werden.
+  Daher kann es je nach Misstrauen gegenüber den großen Technikkonzernen sinnvoll sein auf eine offene alternative wie KeePassXC zu setzen.
+  Seit einigen Versionen unterstützt das OpenSource Programm auch Passkeys und kann diese über das Browserplugin zur Anmeldung an Webdiensten bereitstellen.
+  Ganz sicher sind Passkeys auch auf Hardwaretokens. Von denen kann man aber kein Backup machen.
+  
+  Wie bei 2FA solltest du prüfen, ob zwei Passkeys bei einem Dienst hinterlegt werden können oder wie der Prozess zur Wiederherstellung aussieht,
+  wenn du deinen Passkey verlierst.
+  
+  Nimm den heutigen Tag als Anlass und konfiguriere bei deinen Accounts Passkeys.
