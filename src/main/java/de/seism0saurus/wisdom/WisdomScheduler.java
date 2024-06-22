@@ -65,7 +65,7 @@ public class WisdomScheduler {
      * <p>
      * Exceptions are logged as errors and suppressed. No further error handling is applied.
      */
-    @Scheduled(cron = "*/5 * * * * ?")
+    @Scheduled(cron = "30 7 * * * ?")
     public void postWisdom() throws FileNotFoundException {
         LOGGER.info("Going to post new wisdom");
         String paddedWisdomNumber = getPaddedWisdomNumber();
