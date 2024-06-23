@@ -26,14 +26,14 @@ public class RunAfterStartup {
      * Can be configured in the <code>application.properties</code>.
      */
     @Value("${wisdoms.dir}")
-    private String slothDirectory;
+    private String wisdomsDirectory;
 
     @EventListener(ApplicationReadyEvent.class)
     public void runAfterStartup() {
-        File slothDirectoryAsFile = new File(slothDirectory);
-        long numberOfSloths = Stream.of(slothDirectoryAsFile.listFiles())
+        File wisdomsDirectoryAsFile = new File(wisdomsDirectory);
+        long numberOfSloths = Stream.of(wisdomsDirectoryAsFile.listFiles())
                 .filter(file -> file.getName().endsWith(".jpg"))
                 .count();
-        LOGGER.info("Bot started. I have " + numberOfSloths + " wisdoms found in " + slothDirectory);
+        LOGGER.info("Bot started. I have " + numberOfSloths + " wisdoms found in " + wisdomsDirectory);
     }
 }
