@@ -1,0 +1,33 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Hast du einen Viren-scanner? Schütze dich vor Viren und Trojanern."
+wisdom: |
+  Viren und Trojaner werden auf verschiedene Arten verteilt.
+  Du kannst sie dir über Dateianhänge in Mails, Downloads von unseriösen Quellen oder USB Sticks einfangen.
+  Selten kommen auch kompliziertere Verteilungsmechanismen zum Einsatz.
+  Es gab Fälle, in denen Angreifer*innen Werbung auf normalen Seiten gebucht haben, über die eine Sicherheitslücke im Browser ausgenutzt
+  und damit ein Trojaner installiert wurde.
+  Auch Sicherheitslücken im Betriebssystem können als Einfallstor genutzt werden.
+  
+  Gerade Windows ist wegen seiner großen Verbreitung nach wie vor das Hauptziel für Angriffe.
+  Um so wichtiger ist es, einen Virenscanner zu nutzten.
+  Zum Glück hat Microsoft mit dem Defender vor Jahren einen Virenscanner integriert,
+  der mit der Zeit mit den großen kommerziellen und kostenlosen Anbietern gleichgezogen hat.
+  Außerdem enthält er keine unnützen Funktionen, mit denen andere Anbieter sich abheben wollen.
+  Unter Windows ist es daher ausreichend, den Defender zu aktivieren.
+  
+  Auch für MacOS, Linux und Mobilbetriebssysteme gibt es Virenscanner.
+  Dort ist der Einsatz aber nicht ganz so kritisch.
+  Durch die Verwendung von zentralen Appstores beziehungsweise Repositories fallen einige Verbreitungswege weg.
+  Allerdings wird z.B, auch im Google Playstore regelmäßig von Sicherheitsforscher*innen Malware gefunden,
+  die in dutzenden Apps enthalten war. Und das obwohl diese angeblich geprüft sind.
+  
+  Die Empfehlung für diese Betriebssysteme ist leider nicht so einfach und eindeutig.
+  Am besten informierst du dich über unabhängige Tests großer IT Portale über die aktuell verfügbaren Scanner,
+  falls du einen einsetzen möchtest.
+  
+  Nimm den heutigen Tag als Anlass und prüfe, ob ein Virenscanner auf deinem System installiert ist und mit aktuellen Signaturen ausgestattet ist.

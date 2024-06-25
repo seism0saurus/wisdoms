@@ -1,0 +1,27 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Hast du noch Defaultpasswörter? Mach es Angreifern nicht so leicht und ändere sie."
+wisdom: |
+  Viele Geräte werden mit einem Default Passwort ausgeliefert.
+  Diese sind oft sehr kurz und sollen eigentlich nur genutzt werden, bis du ein eigenes eingerichtet hast.
+  Doch bei vielen Installationsassistenten wird das Ändern des Passwortes nicht erzwungen
+  und so bleiben die Passwörter aktiv und werden vergessen.
+  
+  Das ist häufig ein Sicherheitsproblem. Denn die Defaultpasswörter stehen bei den Herstellern in den Anleitungen
+  und werden in Datenbanken gesammelt.
+  Hat ein*e Angreifer*in Zugang zum Gerät oder Anwendung kann sie sie diese einfach ausprobieren und bekommt vollen Zugriff.
+  Gerade bei Routern, über die der ganze Netzwerkverkehr läuft, kann der Verkehr umgeleitet oder manipuliert werden,
+  um z.B. Trojaner zu verteilen oder den Router in ein Botnetz zu integrieren. Er greift dann z.B. andere Router an
+  oder nimmt an Distributed Denial of Service Angriffen teil.
+  
+  Auch aufgedruckte scheinbar zufällige Passwörter können unsicher sein.
+  Wenn diese z.B. von der Seriennummer abgeleitet werden oder vom Produktionsdatum, könnte ein*e Angreifer*in die
+  möglichen Passwörter mit Glück bereits so weit einschränken, dass sie dieses erraten kann.
+  
+  Du solltest daher die Standardzugangsdaten immer ändern.
+  
+  Nimm den heutigen Tag als Anlass und setze bei deinem Router ein sicheres Passwort für die Verwaltungsoberfläche.
