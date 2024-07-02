@@ -1,0 +1,35 @@
+description: |
+  Eine Postkarte mit dem Logo von seism0saurus auf der linken Seite.
+  Ein gezeichneter Seismosaurus im Comicstil.
+  Neben seinem langen Hals steht nicht ganz ernst gemeint "Shake up it-security" und seine Homepage seism0saurus.de
+    
+  Rechts daneben der Spruch des Tages:
+  "Gibts das auch Offline? Nutze Geräte, die du ohne Cloud betreiben kannst."
+wisdom: |
+  Lass Geräte offline, wenn sie dir keinen großen Mehrwert bieten.
+  Achte schon beim Kauf auf die Möglichkeit etwas offline zu betreiben
+  oder ob es OpenSource Alternativen für die Anbindung gibt.
+  
+  Vor einiger Zeit geisterte die Geschichte eines Botnetzes aus vernetzten Zahnbürsten durchs Internet.
+  Es stellte sich heraus, dass nur von einem möglichen Szenario gesprochen wurde und das (noch) nicht passiert ist.
+  Doch die Geschichte war zu glaubwürdig und verbreitete sich rasch im Fediverse.
+  Sobald etwas vernetzt ist, wird es früher oder später angegriffen werden.
+  Ob die Angriffe gelingen oder ob das Gerät sicher ist, hängt davon ab, wie sauber der Hersteller und Zulieferer
+  gearbeitet haben und ob sie Meldungen über Lücken annehmen und diese zeitnah beheben.
+  Doch für die meisten Unternehmen ist es nicht wirtschaftlich auch nach 1, 3, 5 oder 10 Jahren noch in ein altes
+  Produkt zu investieren.
+  Bei anderen bekommst du nicht mal das und das Gerät wird schon mit veralteter Software ausgeliefert und wird nie aktualisiert.
+  
+  Das Problem ist deutlich kleiner, wenn dein Gerät gar nicht erst ins Internet oder mit dem Smartphone gekoppelt werden muss,
+  um zu funktionieren. Angreifer*innen bleibt der einfache Zugriff aus der Ferne verwehrt.
+   
+  Ein weiterer Aspekt ist die Verfügbarkeit. Manche Geräte wurden nach wenigen Jahren zu Elektroschrott,
+  weil der Hersteller die Server nicht mehr betreiben wollte oder konnte.
+  Die Geräte konnten nicht mehr mit den Servern kommunizieren und stellten die Funktion ein.
+  
+  Gerade im Smart Home gibt es viele Geräte, auf die du quelloffene Firmware aufspielen kannst
+  und so auch ohne den Hersteller Updates von der Community bekommst.
+  Durch Integration in ein lokal laufendes Home Assistant wirst du unabhängig von Servern
+  und kannst viele Geräte in ein separates Netzwerk ohne Internetverbindung stecken.
+  
+  Nimm den heutigen Tag als Anlass und prüfe, welche Geräte mit deinem Netzwerk oder Smartphone verbunden sind.
