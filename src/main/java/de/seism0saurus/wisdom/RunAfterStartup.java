@@ -32,7 +32,7 @@ public class RunAfterStartup {
     public void runAfterStartup() {
         File wisdomsDirectoryAsFile = new File(wisdomsDirectory);
         long numberOfSloths = Stream.of(wisdomsDirectoryAsFile.listFiles())
-                .filter(file -> file.getName().endsWith(".jpg"))
+                .filter(file -> file.getName().endsWith(".yaml") || file.getName().endsWith(".yml"))
                 .count();
         LOGGER.info("Bot started. I have " + numberOfSloths + " wisdoms found in " + wisdomsDirectory);
     }

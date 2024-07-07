@@ -68,20 +68,47 @@ public class WisdomScheduler {
     @Scheduled(cron = "0 30 7 * * ?", zone = "Europe/Berlin")
     public void postWisdom() throws FileNotFoundException {
         LOGGER.info("Going to post new wisdom");
+
         String paddedWisdomNumber = getPaddedWisdomNumber();
-        if (paddedWisdomNumber != null){
-            Map<String, Object> yaml = loadYaml(paddedWisdomNumber);
-            File image = loadImage(paddedWisdomNumber);
-            LOGGER.info("Posting wisdom number " + paddedWisdomNumber);
-            try {
-                Status status = this.repo.postStatus(yaml, image);
-                LOGGER.info("Wisdom successfully postet with id " + status.getId());
-            } catch (BigBoneRequestException e) {
-                LOGGER.error("An error occurred. Status code: " + e.getHttpStatusCode() + "; message: " + e.getMessage() + "; cause:" + e.getCause());
-            }
-        } else {
-            LOGGER.warn("Could not find any wisdoms in " + wisdomDirectory);
+        if (safeguardNumber(paddedWisdomNumber)) return;
+
+        Map<String, Object> yaml = loadYaml(paddedWisdomNumber);
+        if (safeguardYaml(yaml, paddedWisdomNumber)) return;
+
+        File image = loadImage(paddedWisdomNumber);
+        if (safeguardImage(image, paddedWisdomNumber)) return;
+
+        LOGGER.info("Posting wisdom number " + paddedWisdomNumber);
+        try {
+            Status status = this.repo.postStatus(yaml, image);
+            LOGGER.info("Wisdom successfully postet with id " + status.getId());
+        } catch (BigBoneRequestException e) {
+            LOGGER.error("An error occurred. Status code: " + e.getHttpStatusCode() + "; message: " + e.getMessage() + "; cause:" + e.getCause());
         }
+    }
+
+    private static boolean safeguardImage(File image, String paddedWisdomNumber) {
+        if (image == null) {
+            LOGGER.warn("Could not find any image for wisdom # " + paddedWisdomNumber);
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean safeguardYaml(Map<String, Object> yaml, String paddedWisdomNumber) {
+        if (yaml == null || yaml.isEmpty()) {
+            LOGGER.warn("Could not load any yaml for wisdom # " + paddedWisdomNumber);
+            return true;
+        }
+        return false;
+    }
+
+    private boolean safeguardNumber(String paddedWisdomNumber) {
+        if (paddedWisdomNumber == null) {
+            LOGGER.warn("Could not find any wisdoms in " + wisdomDirectory);
+            return true;
+        }
+        return false;
     }
 
     private String getPaddedWisdomNumber() {
@@ -89,7 +116,7 @@ public class WisdomScheduler {
         File[] files = wisdomDirectoryAsFile.listFiles();
         if (files != null){
             List<File> wisdomList = Stream.of(files)
-                    .filter(file -> file.getName().endsWith(".jpg"))
+                    .filter(file -> file.getName().endsWith(".yaml") || file.getName().endsWith(".yml"))
                     .toList();
             Random rand = new Random();
             LOGGER.info("There are " + wisdomList.size() + " wisdoms configured");
@@ -103,11 +130,28 @@ public class WisdomScheduler {
         String filename = wisdomDirectory + "/" + paddedWisdomNumber + ".yaml";
         Yaml yaml = new Yaml();
         File file = new File(filename);
-        return yaml.load(new FileInputStream(file));
+        if (file.exists()){
+            return yaml.load(new FileInputStream(file));
+        }
+        return Map.of();
     }
 
     private File loadImage(final String paddedWisdomNumber) {
         String filename = wisdomDirectory + "/" + paddedWisdomNumber + ".jpg";
-        return new File(filename);
+        File jpg = new File(filename);
+        if (jpg.exists()) {
+            return jpg;
+        }
+        filename = wisdomDirectory + "/" + paddedWisdomNumber + ".jpeg";
+        File jpeg = new File(filename);
+        if (jpeg.exists()) {
+            return jpeg;
+        }
+        filename = wisdomDirectory + "/" + paddedWisdomNumber + ".png";
+        File png = new File(filename);
+        if (png.exists()) {
+            return png;
+        }
+        return null;
     }
 }
