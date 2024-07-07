@@ -86,6 +86,7 @@ public class WisdomScheduler {
                 .filter(file -> file.getName().endsWith(".jpg"))
                 .toList();
         Random rand = new Random();
+        LOGGER.info("There are " + wisdomList.size() + " wisdoms configured");
         int imageNumber = rand.nextInt(wisdomList.size()) + 1;
         String fileNumber = String.format("%05d", imageNumber);
         return fileNumber;
