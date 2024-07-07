@@ -69,27 +69,34 @@ public class WisdomScheduler {
     public void postWisdom() throws FileNotFoundException {
         LOGGER.info("Going to post new wisdom");
         String paddedWisdomNumber = getPaddedWisdomNumber();
-        Map<String, Object> yaml = loadYaml(paddedWisdomNumber);
-        File image = loadImage(paddedWisdomNumber);
-        LOGGER.info("Posting wisdom number " + paddedWisdomNumber);
-        try {
-            Status status = this.repo.postStatus(yaml, image);
-            LOGGER.info("Wisdom successfully postet with id " + status.getId());
-        } catch (BigBoneRequestException e) {
-            LOGGER.error("An error occurred. Status code: " + e.getHttpStatusCode() + "; message: " + e.getMessage() + "; cause:" + e.getCause());
+        if (paddedWisdomNumber != null){
+            Map<String, Object> yaml = loadYaml(paddedWisdomNumber);
+            File image = loadImage(paddedWisdomNumber);
+            LOGGER.info("Posting wisdom number " + paddedWisdomNumber);
+            try {
+                Status status = this.repo.postStatus(yaml, image);
+                LOGGER.info("Wisdom successfully postet with id " + status.getId());
+            } catch (BigBoneRequestException e) {
+                LOGGER.error("An error occurred. Status code: " + e.getHttpStatusCode() + "; message: " + e.getMessage() + "; cause:" + e.getCause());
+            }
+        } else {
+            LOGGER.warn("Could not find any wisdoms in " + wisdomDirectory);
         }
     }
 
     private String getPaddedWisdomNumber() {
         File wisdomDirectoryAsFile = new File(wisdomDirectory);
-        List<File> wisdomList = Stream.of(wisdomDirectoryAsFile.listFiles())
-                .filter(file -> file.getName().endsWith(".jpg"))
-                .toList();
-        Random rand = new Random();
-        LOGGER.info("There are " + wisdomList.size() + " wisdoms configured");
-        int imageNumber = rand.nextInt(wisdomList.size()) + 1;
-        String fileNumber = String.format("%05d", imageNumber);
-        return fileNumber;
+        File[] files = wisdomDirectoryAsFile.listFiles();
+        if (files != null){
+            List<File> wisdomList = Stream.of(files)
+                    .filter(file -> file.getName().endsWith(".jpg"))
+                    .toList();
+            Random rand = new Random();
+            LOGGER.info("There are " + wisdomList.size() + " wisdoms configured");
+            int imageNumber = rand.nextInt(wisdomList.size()) + 1;
+            return String.format("%05d", imageNumber);
+        }
+        return null;
     }
 
     private Map<String, Object> loadYaml(final String paddedWisdomNumber) throws FileNotFoundException {
